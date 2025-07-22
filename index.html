@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Topics Explained</title>
+    <!-- <link rel="icon" type="image/png" href="favico.png" /> -->
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <style>
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+      }
+      .block {
+        display: block;
+        background: #f4f4f4;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      .inline {
+        display: inline;
+        background: lightblue;
+        padding: 5px;
+      }
+      .red-text {
+        color: red;
+      }
+      .blue-text {
+        color: blue;
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="red-text">HTML for Beginners</h1>
+
+      <!-- HTML COMMENT -->
+      <!-- This is a comment and it won't be displayed in the browser -->
+
+      <h2>HTML Colors</h2>
+      <p style="color: green">This text is green using inline style.</p>
+      <p class="blue-text">This text uses a class for blue color.</p>
+      <!-- https://htmlcolorcodes.com/ -->
+
+      <h2>HTML Links</h2>
+      <a href="https://www.example.com" target="_blank">Visit Example</a>
+
+      <h2>HTML Images</h2>
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Placeholder Image"
+        width="150"
+      />
+
+      <h2>HTML Favicons</h2>
+      <p>
+        The favicon appears in the browser tab, defined in the &lt;head&gt;
+        using &lt;link rel="icon" ... &gt;
+      </p>
+
+      <h2>HTML Tables</h2>
+      <table border="`" style="width: 100%">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Alice</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>30</td>
+        </tr>
+      </table>
+
+      <h2>HTML Lists</h2>
+      <p>Unordered List:</p>
+      <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+      </ul>
+      <p>Ordered List:</p>
+      <ol>
+        <li>Step One</li>
+        <li>Step Two</li>
+      </ol>
+
+      <h2>HTML Block vs Inline</h2>
+      <div class="block">This is a block element (div)</div>
+      <span class="inline">Inline 1</span>
+      <span class="inline">Inline 2</span>
+
+      <h2>HTML Classes and ID</h2>
+      <p class="blue-text">This uses a class.</p>
+      <p id="unique" style="color: purple">This uses an ID.</p>
+
+      <h2>HTML Iframes</h2>
+      <!-- src="https://www.example.com" -->
+
+      <iframe
+        src="https://youtu.be/OFPafRWM6bs?t=3"
+        frameborder="0"
+        width="200"
+        height="200"
+        title="Example Site"
+      ></iframe>
+
+      <h2>HTML Layout</h2>
+      <header class="block">Header Section</header>
+      <nav class="block">Navigation Menu</nav>
+      <main class="block">Main Content</main>
+      <footer class="block">Footer</footer>
+
+      <h2>HTML Responsive</h2>
+      <p>
+        Resize the browser window to see responsive text in the &lt;style&gt;
+        section.
+      </p>
+      <!-- https://html.spec.whatwg.org/multipage/named-characters.ht -->
+      <!-- https://www.w3schools.com/html/html_entities.asp -->
+
+      <h2>HTML Entities & Symbols</h2>
+      <p>
+        HTML entities are special codes used to display reserved characters,
+        symbols, or non-keyboard characters in HTML.
+      </p>
+      <p>Copyright: &copy;</p>
+      <p>Less than: &lt;</p>
+      <p>Greater than: &gt;</p>
+
+      <h2>HTML Emojis</h2>
+      <p>&#128512; &#128640; &U+1F525;</p>
+    </div>
+  </body>
+</html>
